@@ -1,0 +1,22 @@
+{
+  "name": "no-framework-sass",
+  "version": "1.0.0",
+  "description": "A raw HTML / Css / JS / Sass responsive portfolio style website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --resursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martin-Stankard/no-framework-sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martin-Stankard/no-framework-sass/issues"
+  },
+  "homepage": "https://github.com/Martin-Stankard/no-framework-sass#readme",
+  "dependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
