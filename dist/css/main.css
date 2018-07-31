@@ -1,3 +1,26 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.37s linear; }
+  .menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: #fff6ed;
+    transition: all 0.37s linear; }
+  .menu-btn.close .btn-line:nth-child(1) {
+    border-style: solid;
+    transform: rotate(45deg) translate(8px, 5px); }
+  .menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+    background: blue; }
+  .menu-btn.close .btn-line:nth-child(3) {
+    border-style: solid;
+    transform: rotate(-45deg) translate(8px, -5px); }
+
 * {
   box-sizing: border-box; }
 
