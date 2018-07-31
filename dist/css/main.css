@@ -8,10 +8,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(https://picsum.photos/640/480?random&blur);
+    background: url(https://picsum.photos/442/248?random&blur);
     background-attachment: fixed;
     background-size: cover; }
-    body#bg-img .overlay {
+    body#bg-img:after {
+      content: '';
       position: absolute;
       top: 0;
       right: 0;

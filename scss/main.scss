@@ -3,7 +3,7 @@ $secondary-color: #ee3f56;
 $text-color: rgb(255, 246, 237);
 $show-home-image: true;
 $random-image: "https://picsum.photos";
-$home-image: url(#{$random-image}/640/480?random&blur);
+$home-image: url(#{$random-image}/442/248?random&blur);
 $background-opacity: 0.73;
 
 @mixin easeOut {
@@ -16,7 +16,8 @@ $background-opacity: 0.73;
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
-            .overlay{
+            &:after{
+                content: '';
                 position: absolute;
                 top:0;
                 right: 0;
