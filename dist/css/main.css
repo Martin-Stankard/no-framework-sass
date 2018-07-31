@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -25,21 +25,22 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  padding: .3rem; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
-    background: rgba(18, 15, 56, 0.5); }
+    background: rgba(6, 5, 20, 0.31); }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1 rem;
-    background: rgba(18, 15, 56, 0.5); }
+    background: rgba(24, 21, 76, 0.31); }
 
 a {
-  color: #fff;
+  color: #fff6ed;
   text-decoration: none; }
 
 header {
@@ -54,7 +55,9 @@ main {
   padding: 4rem;
   height: 100%; }
   main .icons {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    background: rgba(6, 5, 20, 0.31);
+    display: inline-block; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {

@@ -1,0 +1,31 @@
+$primary-color: rgb(15, 13, 48);
+$secondary-color: #ee3f56;
+$text-color: rgb(255, 246, 237);
+$show-home-image: true;
+$random-image: "https://picsum.photos";
+$home-image: url(#{$random-image}/442/248?random&blur);
+$background-opacity: 0.73;
+
+@mixin easeOut {
+  transition: all 0.37s linear;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
